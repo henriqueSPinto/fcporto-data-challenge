@@ -180,6 +180,12 @@ tab1, tab2, tab3 = st.tabs(["Visão geral", "O rest-attack e o seu preço", "Met
 
 # ---------------------------- Tab 1: visão geral ----------------------------
 with tab1:
+    st.info(
+        "**O jogo num relance.** Um 0-0 equilibrado, decidido nos penáltis após 120 minutos. Seguem-se "
+        "duas leituras: a **principal**, como Portugal sustentou o rest-attack do Leão à esquerda e o "
+        "que ele rendeu (separador seguinte); e uma **secundária**, como as pernas frescas dos "
+        "suplentes mudaram o fluxo (abaixo)."
+    )
     st.subheader("Fluxo do jogo: momentum de ameaça")
     st.pyplot(fig_momentum(), clear_figure=False)
     st.markdown(
@@ -195,11 +201,6 @@ with tab1:
     )
     with st.expander("Ameaça acumulada por bloco de 15 min"):
         st.dataframe(get_blocos(), width="stretch")
-    st.info(
-        "**O jogo num relance.** Um 0-0 equilibrado, decidido nos penáltis após 120 minutos. Seguem-se "
-        "duas leituras: a **principal**, como Portugal sustentou o rest-attack do Leão à esquerda e o "
-        "que ele rendeu; e uma **secundária**, como as pernas frescas dos suplentes mudaram o fluxo."
-    )
 
 # ---------------------------- Tab 2: o rest-attack e o seu preço ----------------------------
 with tab2:
@@ -218,8 +219,24 @@ with tab2:
         "funções de médio, trabalha. E, como se verá, os próprios Leão e Ronaldo não são o mesmo "
         "perfil.)"
     )
+    st.success(
+        "**A resposta em 30 segundos (a conclusão acionável).** Jogo equilibrado (Portugal com mais posse e "
+        "xG), 0-0 até aos penáltis. Portugal pôde correr o rest-attack do Leão à esquerda porque a "
+        "**estrutura o pagou**: o Nuno Mendes cobre atrás e o Palhinha protege a profundidade (a França "
+        "esteve ativa pelos dois flancos, não foi um lado morto). O **custo defensivo foi real** e "
+        "sobrevive ao ajuste por oportunidade. O **retorno apareceu, pela via das pernas frescas**: "
+        "Leão ficou alto (posição) e criou **a conduzir** (2º em ameaça gerada, 1º em conduções "
+        "progressivas da equipa), a desmarcar-se e a bater o homem, não a receber livre nas costas, "
+        "que recebeu apertado e marcado 1v1 (a saída em transição quase não existiu). Perfil viável "
+        "com a estrutura certa à volta: um lateral como o Nuno Mendes, que cobriu, construiu e ainda "
+        "atacou o corredor, e um pivot que protege a profundidade. E os dois avançados não são "
+        "o mesmo caso: Ronaldo contribui moderadamente mais na pressão e no posicionamento defensivo, "
+        "mas sem a mesma preponderância ofensiva, por isso a análise centrou-se no Leão, o rest-attack "
+        "mais puro e ao mesmo tempo o mais produtivo à frente. Leitura descritiva de um jogo, não "
+        "projetável. A evidência, em três perguntas, é o resto desta página."
+    )
 
-    st.markdown("##### Defendem mesmo menos? Sim, e o fosso aguenta o ajuste por oportunidade")
+    st.markdown("#### 1 de 3 · Defendem mesmo menos? Sim, e o fosso aguenta o ajuste por oportunidade")
     st.markdown(
         "Medir \"defender\" aqui é contar *contests* (pressões, duelos e dribles sofridos) e ajustar "
         "pela **oportunidade**: quantas vezes a bola da França passou perto de cada um enquanto esteve "
@@ -284,7 +301,7 @@ with tab2:
         "enquanto Leão fica em cima."
     )
 
-    st.markdown("##### Quem paga a conta: o lateral e o pivot")
+    st.markdown("#### 2 de 3 · Quem paga a conta? O lateral e o pivot")
     fcol, tcol = st.columns([3, 2])
     with fcol:
         st.pyplot(fig_flank(), clear_figure=False)
@@ -309,7 +326,8 @@ with tab2:
         "deixa atrás de si."
     )
 
-    st.markdown("##### A cobertura aguentou? O espaço no corredor do Leão (360)")
+    st.markdown("#### 3 de 3 · Resultou? O custo atrás, o retorno à frente")
+    st.markdown("##### O custo: a cobertura aguentou? O espaço no corredor do Leão (360)")
     scol, dcol = st.columns([3, 2])
     with scol:
         st.pyplot(fig_space(), clear_figure=False)
@@ -350,7 +368,7 @@ with tab2:
             "errada para um extremo)."
         )
 
-    st.markdown("##### Como rendeu, e como não: o espaço à receção (360)")
+    st.markdown("##### O teste do benefício: como rendeu, e como não (o espaço à receção, 360)")
     rcol, tcol = st.columns([3, 2])
     with rcol:
         st.pyplot(fig_reception(), clear_figure=False)
@@ -381,20 +399,9 @@ with tab2:
         )
 
     st.success(
-        "**Conclusão principal (o insight acionável).** Jogo equilibrado (Portugal com mais posse e "
-        "xG), 0-0 até aos penáltis. Portugal pôde correr o rest-attack do Leão à esquerda porque a "
-        "**estrutura o pagou**: o Nuno Mendes cobre atrás e o Palhinha protege a profundidade (a França "
-        "esteve ativa pelos dois flancos, não foi um lado morto). O **custo defensivo foi real** e "
-        "sobrevive ao ajuste por oportunidade. O **retorno apareceu, pela via das pernas frescas**: "
-        "Leão ficou alto (posição) e criou **a conduzir** (2º em ameaça gerada, 1º em conduções "
-        "progressivas da equipa), a desmarcar-se e a bater o homem, não a receber livre nas costas, "
-        "que recebeu apertado e marcado 1v1 (a saída em transição quase não existiu). Perfil viável "
-        "com a estrutura certa à volta: um lateral como o Nuno Mendes, que cobriu, construiu e ainda "
-        "atacou o corredor, e um pivot que protege a profundidade. E os dois avançados não são "
-        "o mesmo caso: Ronaldo contribui moderadamente mais na pressão e no posicionamento defensivo, "
-        "mas sem a mesma preponderância ofensiva, por isso a análise centrou-se no Leão, o rest-attack "
-        "mais puro e ao mesmo tempo o mais produtivo à frente. Leitura descritiva de um jogo, não "
-        "projetável."
+        "**Em síntese.** Custo defensivo real (o Leão pressiona menos, mesmo por oportunidade), pago "
+        "pela estrutura (Nuno Mendes e Palhinha), sem espaço claro concedido no seu corredor; retorno "
+        "na condução, não na saída livre. A conclusão completa está no topo da página."
     )
     st.info(
         "**Conclusão secundária: as pernas frescas mudaram o fluxo.** A França teve o seu melhor "
