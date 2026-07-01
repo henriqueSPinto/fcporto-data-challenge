@@ -451,7 +451,7 @@ jogadores da França. Nem sequer consigo dizer com confiança por que lado a Fra
 por toques o jogo foi equilibrado nos dois flancos (mais pelo lado do Leão no meio-campo, mais pelo
 do Mbappé no último terço). Fico pela descrição, sem reduzir a um lado nem inferir intenção.
 
-**Trabalho futuro.** Duas direções. Uma que estes dados suportam e deixei por âmbito: a
+**O que faria a seguir.** Duas direções. Uma que estes dados suportam e deixei por âmbito: a
 sobrecarga numérica local (contar franceses vs portugueses à volta da bola no freeze frame), uma
 leitura bilateral do espaço que a métrica de corredor, unilateral, não capta. Outra que os dados
 não dão: o rest-attack por jogador (quantas vezes o Leão em concreto fica alto como saída de
