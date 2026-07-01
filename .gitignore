@@ -1,0 +1,20 @@
+# Working memory / AI pairing (não versionar)
+CLAUDE.md
+docs/decision-log.md
+.claude/
+
+# Enunciado do challenge (documento deles, fica local)
+*.pdf
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.ipynb_checkpoints/
+
+# Dados em bruto (cache do StatsBomb open-data; reproduzível via src/ingest.py)
+data/raw/
+
+# OS
+.DS_Store
