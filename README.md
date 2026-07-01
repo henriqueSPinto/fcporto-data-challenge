@@ -6,6 +6,8 @@ Um jogo, com Event Data e 360 Freeze Frames, transformado numa leitura tática a
 **Jogo:** Portugal 0-0 França, quartos de final do Euro 2024 (`match_id = 3942349`), decidido
 nos penáltis após prolongamento. App interativa em Streamlit por cima da pipeline de análise.
 
+**App online:** https://fcporto-data-challenge-henrique-pinto.streamlit.app/
+
 ## A premissa
 
 Por analogia com o *rest defence* (os jogadores que ficam atrás durante o ataque a cobrir o
