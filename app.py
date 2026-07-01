@@ -223,7 +223,7 @@ with tab2:
     st.markdown(
         "Medir \"defender\" aqui é contar *contests* (pressões, duelos e dribles sofridos) e ajustar "
         "pela **oportunidade**: quantas vezes a bola da França passou perto de cada um enquanto esteve "
-        "em campo. Assim comparo a vontade de disputar, não quem calhou ter mais bola ao pé."
+        "em campo. Assim comparo a vontade de disputar, não apenas quem teve mais oportunidades de o fazer."
     )
     lcol, rcol = st.columns([3, 2])
     with lcol:
