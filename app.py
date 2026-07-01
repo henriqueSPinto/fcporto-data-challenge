@@ -153,7 +153,7 @@ def fig_action():
 st.title("Portugal 0-0 França")
 st.caption(
     "Euro 2024, quartos de final · decidido nos penáltis após prolongamento (120') · "
-    "StatsBomb Open Data (Event + 360), match_id 3942349."
+    "StatsBomb Open Data (Event + 360), match_id 3942349 · Análise de Henrique Pinto."
 )
 
 ctx = get_context()
